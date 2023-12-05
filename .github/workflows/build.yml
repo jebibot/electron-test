@@ -25,3 +25,7 @@ jobs:
       shell: bash
     - run: npm run dist
       shell: bash
+    - uses: actions/upload-artifact@v3
+      with:
+        name: dist
+        path: dist
